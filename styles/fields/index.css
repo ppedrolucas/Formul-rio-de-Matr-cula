@@ -1,3 +1,5 @@
+@import url(droparea.css);
+
 input,
 textarea,
 select {
@@ -19,17 +21,19 @@ label {
 
 input:focus,
 select:focus,
-textarea:focus {
+textarea:focus,
+input[type="date"]:focus-within {
   outline: 0.25rem solid var(--surface-secondary);
   border: 0.125rem solid var(--stroke-hightlight);
   outline-offset: 0.1px;
 }
 
-input[type="date"] {
+input[id="datan"] {
   position: relative;
   &::-webkit-calendar-picker-indicator {
     opacity: 0;
   }
+
   &::before {
     content: "";
     position: absolute;
@@ -42,7 +46,7 @@ input[type="date"] {
   }
 }
 
-#gender {
+select {
   background: url(../../assets/icons/arrow-down-01.svg) no-repeat
     calc(100% -1rem);
 }
