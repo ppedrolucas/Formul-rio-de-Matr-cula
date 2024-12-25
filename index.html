@@ -97,6 +97,84 @@
                 </div>
               </div>
             </fieldset>
+
+            <fieldset class="address">
+              <legend>Endereço residencial</legend>
+              <div class="input-wrapper">
+                <label for="cep">CEP</label>
+                <input id="cep" name="cep" type="text" />
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="street">Rua</label>
+                  <input
+                    id="street"
+                    name="street"
+                    type="text"
+                    value="Rua passa nada"
+                    disabled
+                  />
+                </div>
+                <div class="input-wrapper flex-1">
+                  <label for="number">Número</label>
+                  <input id="number" name="number" type="number" />
+                </div>
+              </div>
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="city">Cidade</label>
+                  <input
+                    id="city"
+                    name="city"
+                    type="text"
+                    value="Pacajus"
+                    disabled
+                  />
+                </div>
+                <div class="input-wrapper flex-1">
+                  <label for="state">Estado</label>
+                  <input
+                    id="state"
+                    name="state"
+                    type="text"
+                    value="CE"
+                    disabled
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="warden">
+              <legend>Informações do responsável</legend>
+
+              <div class="input-wrapper">
+                <label for="guardian">Nome do responsável</label>
+                <input id="guardian" name="guardian" type="text" />
+                <small
+                  >Principal responsável legal e contato de emergência</small
+                >
+              </div>
+
+              <div class="input-wrapper">
+                <label for="phone">Telefone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="(DDD) 9XXXX-XXXX"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="email">E-mail </label>
+                <input type="email" name="email" id="email" required />
+                <div class="error">
+                  <img src="assets/icons/alert-circle.svg" alt="Erro ícone" />
+                  <span>Insira um E-mail válido</span>
+                </div>
+              </div>
+            </fieldset>
           </form>
         </div>
       </main>
