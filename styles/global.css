@@ -1,0 +1,19 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+  /* rem é uma unidade de medida relativa a regra do navegador, é ótima para acessibilidade. 1rem é equivalente a 16px, se eu quiser usar tamanhos menores deve-se dividir por 16 e para tamanhos maiores deve-se multiplicar. O rem acompanha o tamanho da fonte do browser. */
+  --text: 400 1rem/1.5 var(--font-family);
+  --text-sm: 400 0.875rem/1.4 var(--font-family);
+
+  /* Colors */
+  --text-primary: #292524;
+  --text-secondary: #57534e;
+  --text-tertiary: #8f8881;
+  --text-highlight: #e43a12;
+
+  --surface-primary: #ffffff;
+  --surface-secondary: #fee7d6;
+
+  --stroke-default: #d6d3d1;
+  --stroke-hightlight: #f3541c;
+  --semantic-error: #dc2626;
+}
