@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* A partir de hj adotarei o rem como unidade de medida dos meus projetos */
 :root {
   --font-family: "Poppins", sans-serif;
   /* rem é uma unidade de medida relativa a regra do navegador, é ótima para acessibilidade. 1rem é equivalente a 16px, se eu quiser usar tamanhos menores deve-se dividir por 16 e para tamanhos maiores deve-se multiplicar. O rem acompanha o tamanho da fonte do browser. */
@@ -26,4 +27,16 @@
 body {
   /*Nunca vai ter rolagem, transbordamento */
   overflow: hidden;
+  font: var(--text);
+  color: var(--text-secondary);
+}
+
+h1,
+h2 {
+  color: var(--text-primary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
