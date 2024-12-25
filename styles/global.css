@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   --font-family: "Poppins", sans-serif;
   /* rem é uma unidade de medida relativa a regra do navegador, é ótima para acessibilidade. 1rem é equivalente a 16px, se eu quiser usar tamanhos menores deve-se dividir por 16 e para tamanhos maiores deve-se multiplicar. O rem acompanha o tamanho da fonte do browser. */
@@ -16,4 +21,9 @@
   --stroke-default: #d6d3d1;
   --stroke-hightlight: #f3541c;
   --semantic-error: #dc2626;
+}
+
+body {
+  /*Nunca vai ter rolagem, transbordamento */
+  overflow: hidden;
 }
